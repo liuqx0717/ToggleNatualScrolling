@@ -26,6 +26,10 @@ bool
 clickElement(AXUIElementRef element,
              double         delaySec);
 
+bool
+closeWindow(AXUIElementRef window,
+            double         delaySec);
+
 void
 printElementAttributes(AXUIElementRef element);
 

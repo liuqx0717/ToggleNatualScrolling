@@ -32,6 +32,8 @@ Specifically, it performs these steps:
 3. Find the element with `NaturalScrollingToggle` identifier, and click
    it.
 
+4. Close the *System Settings* window after 1 second.
+
 # Compile
 
 Xcode Command Line Tools is required (full version of Xcode also works).
@@ -54,3 +56,8 @@ which is ideal for everyday use.
 
 It requires the Accessibility permission (please add the app to the list:
 System Settings -> Privacy & Security -> Accessibility).
+
+# Supported macOS versions
+
+Tested on macOS 13 Sequoia. It should also work on earlier versions as
+long as the *System Settings* UI is similar.

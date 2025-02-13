@@ -55,6 +55,8 @@ toggleNaturalScrolling(void)
         goto releaseNaturalScroll;
     }
 
+    closeWindow(window, 1 /* delaySec */);
+
 releaseNaturalScroll:
     CFRelease(naturalScroll);
 releaseScrollZoom:

@@ -165,6 +165,31 @@ clickElement(AXUIElementRef element,
 }
 
 
+bool
+closeWindow(AXUIElementRef window,
+            double         delaySec)
+{
+    [NSThread sleepForTimeInterval:delaySec];
+
+    AXUIElementRef closeButton = nil;
+    AXError err = AXUIElementCopyAttributeValue(window,
+        kAXCloseButtonAttribute, (CFTypeRef *)&closeButton);
+    if (err != kAXErrorSuccess) {
+        NSLog(@"Failed to get close button: %@", AXErrorToString(err));
+        return NO;
+    }
+
+    err = AXUIElementPerformAction(closeButton, kAXPressAction);
+    CFRelease(closeButton);
+    if (err != kAXErrorSuccess) {
+        NSLog(@"Failed to click close button: %@", AXErrorToString(err));
+        return NO;
+    }
+
+    return YES;
+}
+
+
 void
 printElementAttributes(AXUIElementRef element)
 {
