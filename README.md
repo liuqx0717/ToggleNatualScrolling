@@ -51,3 +51,6 @@ Then build the app by running `build.sh`:
 You'll get an executable, `ToggleNatualScrolling`, which is useful for
 debugging in Terminal, and an app bundle, `ToggleNatualScrolling.app`,
 which is ideal for everyday use.
+
+It requires the Accessibility permission (please add the app to the list:
+System Settings -> Privacy & Security -> Accessibility).
