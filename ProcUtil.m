@@ -6,13 +6,13 @@
 #import <Foundation/Foundation.h>
 
 
-void
+bool
 openSystemSettingsTrackpad(void)
 {
     // Navigate directly to the "Mouse" tab (deep linking).
     // You need to navigate to Trackpad manually if this link does not work.
     NSString *url = @"x-apple.systempreferences:com.apple.Trackpad-Settings.extension";
-    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:url]];
+    return [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:url]];
 }
 
 

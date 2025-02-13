@@ -1,6 +1,7 @@
 #import <sys/types.h>
+#import <Foundation/Foundation.h>
 
-void
+bool
 openSystemSettingsTrackpad(void);
 
 pid_t

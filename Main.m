@@ -8,7 +8,10 @@ toggleNaturalScrolling(void)
 {
     int ret = 0;
 
-    openSystemSettingsTrackpad();
+    if (!openSystemSettingsTrackpad()) {
+        NSLog(@"Failed to open Trackpad settings");
+        return 1;
+    }
 
     pid_t pid = getSystemSettingsPid(3 /* maxWaitSec */);
     if (!pid) {
