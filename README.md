@@ -27,7 +27,7 @@ Specifically, it performs these steps:
 
 2. Find the element with `Scroll & Zoom` label, and click it. \
    If you're using a different language on macOS, be sure to update the
-   `"Scroll & Zoom"` string in `Main.c` accordingly.
+   `"Scroll & Zoom"` string in `Main.m` accordingly.
 
 3. Find the element with `NaturalScrollingToggle` identifier, and click
    it.
