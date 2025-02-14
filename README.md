@@ -54,8 +54,10 @@ You'll get an executable, `ToggleNatualScrolling`, which is useful for
 debugging in Terminal, and an app bundle, `ToggleNatualScrolling.app`,
 which is ideal for everyday use.
 
-It requires the Accessibility permission (please add the app to the list:
-System Settings -> Privacy & Security -> Accessibility).
+It requires the Accessibility permission, please add the app to the list:
+System Settings -> Privacy & Security -> Accessibility. If the app is
+modified (recompiled), you need to remove the app from the list first,
+and then add it back.
 
 # Supported macOS versions
 
