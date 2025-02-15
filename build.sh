@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 
-BIN="./ToggleNatualScrolling"
-BUNDLE="./ToggleNatualScrolling.app"
+BIN="./ToggleNaturalScrolling"
+BUNDLE="./ToggleNaturalScrolling.app"
 
 clang -Wall -O2 \
     -framework Foundation \

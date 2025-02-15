@@ -3,15 +3,15 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleExecutable</key>
-	<string>ToggleNatualScrolling</string>
+	<string>ToggleNaturalScrolling</string>
     <key>LSUIElement</key>
     <true/>
 	<key>CFBundleIdentifier</key>
-	<string>liuqx0717.ToggleNatualScrolling</string>
+	<string>liuqx0717.ToggleNaturalScrolling</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>ToggleNatualScrolling</string>
+	<string>ToggleNaturalScrolling</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
